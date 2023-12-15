@@ -28,7 +28,7 @@ def create_app(add_config=None):
     def hola():
          return 'hola mundo'
         
-    # ~ from . import gestor_db
-    # ~ gestor_db.init_app(app)
+    from . import gestor_db
+    gestor_db.init_app(app)
 
     return app

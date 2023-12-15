@@ -29,11 +29,12 @@ long_line_column=80
 
 [files]
 current_page=1
-FILE_NAME_0=840;Python;0;EUTF-8;1;1;0;%2Fhome%2Fmarco%2FDocumentos%2FGodot-REST_Server%2Fflaskr%2F__init__.py;0;4
-FILE_NAME_1=14;Python;0;EUTF-8;0;1;0;%2Fhome%2Fmarco%2FDocumentos%2FGodot-REST_Server%2Fflaskr%2Fgestor_db.py;0;4
+FILE_NAME_0=833;Python;0;EUTF-8;1;1;0;%2Fhome%2Fmarco%2FDocumentos%2FGodot-REST_Server%2Fflaskr%2F__init__.py;0;4
+FILE_NAME_1=1595;Python;0;EUTF-8;0;1;0;%2Fhome%2Fmarco%2FDocumentos%2FGodot-REST_Server%2Fflaskr%2Fgestor_db.py;0;4
+FILE_NAME_2=155;SQL;0;EUTF-8;0;1;0;%2Fhome%2Fmarco%2FDocumentos%2FGodot-REST_Server%2Fflaskr%2Fesquema.sql;0;4
 
 [VTE]
-last_dir=/home/marco/Documentos/Godot-REST_Server
+last_dir=/home/marco
 
 [prjorg]
 expanded_paths=/home/marco/Documentos/Godot-REST_Server/flaskr;

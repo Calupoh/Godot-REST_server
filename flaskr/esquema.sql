@@ -1,11 +1,7 @@
 DROP TABLE IF EXISTS user;
-DROP TABLE IF EXISTS invitacion;
 
 CREATE TABLE user(
     id INTERGER PRIMARY KEY AUTOINCREMENT,
     username TEXT UNIQUE NOT NULL,
     password TEXT NOT NULL
-);
-CREATE TABLE invitacion(
-    clave TEXT UNIQUE NOT NULL
 );

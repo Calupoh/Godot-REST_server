@@ -3,6 +3,11 @@ import click
 from flask import current_app, g
 
 
+def init_app(app):
+    app.teardown_appcontext(close_db)
+    app.cli.add_command(init_db_command)
+
+
 def get_db():
     if 'db' not in g:
         g.db = sqlite3.connect(
@@ -31,10 +36,11 @@ def init_db():
         db.execute('INSERT INTO invitacion VALUES ("admin")')
 
 
-def add_clave(clave):
+def add_user(user = str, psswd = str):
     # Aqui de sergregaran las claves que mas tarde se usaran para registrarse
     db = get_db()
-    db.execute('INSERT INTO invitacion VALUES (?)', clave)
+    n_user = (user, psswd)
+    db.execute('INSERT INTO use VALUES (?, ?)', n_user)
 
 
 @click.command('init-db')
@@ -44,15 +50,14 @@ def init_db_command():
     click.echo('Initialized the database.')
 
 
-@click.command('agregar-invitacion')
+@click.command('agregar-usuario')
 @click.option(
-    '--clave', help='Agrega una clave a las invitaciones', prompt='clave: '
+    '--usuario', help='Agrega un usuario', prompt='usario: '
+    '--password', help='Agrega contraseña del usuario', prompt='passwd: '
 )
-def add_invitacion_command(clave):
-    add_clave(clave)
-    click.echo(f'Se a agregado la clave {clave}')
+def add_invitacion_command(usuario = None, password = None):
+    if usuario == None or password == None:
+        click.echo('Falta usuario o contraseña')
+    add_user(usuario, password)
+    click.echo(f'Se a agregado el usuario {usuario}')
 
-
-def init_app(app):
-    app.teardown_appcontext(close_db)
-    app.cli.add_command(init_db_command)
