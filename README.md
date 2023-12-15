@@ -4,7 +4,7 @@ Demostración del uso de una API REST como servidor y Godot para cliente.
 
 Este repositorio corresponde al servidor. Para el lado del cliente consulte el siguiente repositorio.
 
-Puedes usar pipvenv para facilitar su instalción.
+Puedes usar [pipvenv](https://pipenv.pypa.io/en/latest/) para facilitar su instalción.
 
 ## Caracteristicas
 
