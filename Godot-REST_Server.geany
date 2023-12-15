@@ -20,7 +20,7 @@ indent_mode=1
 [project]
 name=Godot-REST_Server
 base_path=/home/marco/Documentos/Godot-REST_Server
-description=
+description=Demostración del uso de una API REST como servidor y Godot para cliente.\nEste repositorio corresponde al servidor. Para el lado del cliente consulte el siguiente repositorio.
 file_patterns=
 
 [long line marker]
@@ -29,8 +29,8 @@ long_line_column=80
 
 [files]
 current_page=1
-FILE_NAME_0=846;Python;0;EUTF-8;1;1;0;%2Fhome%2Fmarco%2FDocumentos%2FGodot-REST_Server%2Fflaskr%2F__init__.py;0;4
-FILE_NAME_1=249;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Fmarco%2FDocumentos%2FGodot-REST_Server%2FREADME.md;0;4
+FILE_NAME_0=840;Python;0;EUTF-8;1;1;0;%2Fhome%2Fmarco%2FDocumentos%2FGodot-REST_Server%2Fflaskr%2F__init__.py;0;4
+FILE_NAME_1=14;Python;0;EUTF-8;0;1;0;%2Fhome%2Fmarco%2FDocumentos%2FGodot-REST_Server%2Fflaskr%2Fgestor_db.py;0;4
 
 [VTE]
 last_dir=/home/marco/Documentos/Godot-REST_Server
